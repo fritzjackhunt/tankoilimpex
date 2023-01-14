@@ -1,0 +1,432 @@
+{% extends 'oasis/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!--Jumbotron video section STARTS-->
+    <video autoplay muted loop id="myVideo" style="width: 1277px;">
+        <source src="{% static 'videos/home-video.mp4' %}" type="video/mp4">
+    </video>
+    <!--Jumbotron video section ENDS-->
+
+    <!--Header text section STARTS-->
+    <div class="container">
+      <div class="row hero-1">
+        <div class="col-lg-6" id="header-text">
+          <div>
+            <h1>THE ONLY OIL REFINERY IN UFD </h1>
+            <p>LLC Sochi-Neft Refinery is the only oil refinery in Krasnodar Territory and South Caucasus Region, conveniently located on a developed logistic network, which enables to market oil produc territory and in adjacent Districts.</p>
+          </div>
+          
+          <div>
+            <a href="#" class="btn btn-primary rounded-pill" style="margin-right: 20px;" role="button">Get a Quote</a>
+            <a href="#" class="btn btn-dark rounded-pill" role="button">View Materials Catalog</a>
+          </div>
+        </div>
+
+         <div class="row my-5 pb-3" id="header-tape">
+            <div class="col-lg-3 pt-3">
+              <div class="bl"></div>
+              <div class="tape">
+                <p>98%</p>
+                <span>PROCESSING DEPTH</span>
+              </div>
+            </div>
+            <div class="col-lg-3 pt-3">
+              <div class="bl"></div>
+              <div class="tape">
+                <p>Euro-5</p>
+                <span>DIESEL FUEL</span>
+              </div>
+            </div>
+            <div class="col-lg-3 pt-3">
+              <div class="bl"></div>
+              <div class="tape">
+                <p>Euro-5</p>
+                <span>GASOLINE</span>
+              </div>
+            </div>
+            <div class="col-lg-3 pt-3">
+              <div class="bl"></div>
+              <div class="tape">
+                <p>2000 PPL</p>
+                <span>STAF</span>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!--Header text section ENDS-->
+
+    <!--About section STARTS-->
+    <section id="about" style="width: 1277px; height: 995px; object-fit: cover; object-position: 50% 50%;">
+      <div class="container">
+        <div class="row">
+          <div class="" id="about-header">
+            <span>About the Company</span>
+          </div>
+
+          <div class="col-lg-10">
+            <img src="{% static 'pictures/photoroom.webp' %}" class="d-block" alt="...">
+
+            <p>LLC Sochi-Neft Refinery is unique due to the fact that it is first in Russia (in 37 years) private but not a state-run, independent of Vertical Integrated Oil Companies, commercial, constructed from the scratch oil refinery connected to the oil trunk pipeline (total capacity equals to 9.8 MTPA) and product trunk pipeline (total capacity equals to 8.5 MTPA) which capacity equals 9.8 MTPA, the quality of diesel complies with Euro-5 standard and in 2016 the processing depth has grown up to 98%. In 2020 the quality of gasolines complied with Euro-5 standard.</p>
+
+            <p>Today,  Sochi-Neft Oil Refinery is a modern, open, dynamic company heavily investing in the construction of new and upgrading of existing facilities and planning a diversified development of the production base in central Russia to improve the efficiency of natural resources utilization and increase the production of petroleum products meeting the highest quality standards by implementing the most cutting edge deep conversion processes.</p>
+
+            <p>The Refinery occupies its rightful place among the largest players of the Russian oil refining industry, forming the Krasnodar and South Caucasus Region, oil refinery market, and is known far abroad.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--About section ENDS-->
+
+    <!--Projects section STARTS-->
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <div class="" id="project-header">
+            <span>Our Projects</span>
+          </div>
+
+          <div class="col-lg-10 pt-5">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="projects-icon border border-light">
+                  <i class="fas fa-microchip"></i>
+                </div>
+                <p>Technology</p>
+                <span>We Deliver State-Of-The Art Manufacturing Process Technologies, Catalysts And Technical Services To Bring Consistent Value To Our Customers.</span>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="projects-icon border border-light">
+                  <i class="fas fa-database"></i>
+                </div>
+                <p>Fuels</p>
+                <span>Our Refinery Has A Heavy, High-Sulfur Crude Oil Processing Capacity Of Approximately 268,000 Barrels Per Day. This Facility Produces Gasoline And Fuel Components, Low-Sulfur Diesel, Jet Fuel And Lubricants.</span>
+              </div>
+
+              <div class="col-lg-6 mt-2">
+                <div class="projects-icon border border-light">
+                  <i class="fas fa-cog"></i>
+                </div>
+                <p>Chemicals</p>
+                <span>We Lead The Industry In Producing Basic Chemicals Including Ethylene, Propylene, Propylene Oxide, Ethylene Oxide, Tertiary Butyl Alcohol, Methanol, Acetic Acid And Their Derivatives.</span>
+              </div>
+
+              <div class="col-lg-6 mt-2">
+                <div class="projects-icon border border-light">
+                  <i class="fas fa-burn"></i>
+                </div>
+                <p>Energy and Power</p>
+                <span>LLC Sochi-Neft Refinery is involved in field development in remote, undeveloped regions, completely lacking any utilities infrastructure.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Projects section ENDS-->
+
+    <!--Offer section STARTS-->
+    <section id="offer">
+      <div class="container">
+        <div class="row">
+          <div class="" id="offer-header">
+            <span>What We Offer</span>
+          </div>
+        </div>
+
+        <div class="row" id="offer-pictures">
+          <div class="col-lg-4">
+            <img src="{% static 'pictures/motorfuel.webp' %}" class="img-fluid" alt="">
+            <div>
+              <span>Motor Fuel</span>
+            </div>    
+          </div>
+
+          <div class="col-lg-4">
+            <img src="{% static 'pictures/bitumen.webp' %}" class="img-fluid" alt="">
+            <div>
+              <span>Bitumen Products</span>
+            </div>    
+          </div>
+
+          <div class="col-lg-4">
+            <img src="{% static 'pictures/lubricants.webp' %}" class="img-fluid" alt="">
+            <div>
+              <span>Lubricants</span>
+            </div>    
+          </div>
+
+          <div class="col-lg-4">
+            <img src="{% static 'pictures/aviation.webp' %}" class="img-fluid" alt="">
+            <div>
+              <span>Aviation Fuel</span>
+            </div>    
+          </div>
+
+          <div class="col-lg-4">
+            <img src="{% static 'pictures/lpgtank.webp' %}" class="img-fluid" alt="">
+            <div>
+              <span>LPG Tanks</span>
+            </div>    
+          </div>
+
+          <div class="col-lg-4">
+            <img src="{% static 'pictures/bunkering.webp' %}" class="img-fluid" alt="">
+            <div>
+              <span>Bunkering</span>
+            </div>    
+          </div>
+          
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12" id="see-catalog">
+            <button type="button" class="btn btn-primary rounded-pill">See Catalog</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--Offer section ENDS-->
+
+    <!--Technologies section STARTS-->
+    <section id="technologies">
+      <div class="container">
+        <div class="row">
+          <div class="" id="technologies-header">
+            <span>Technologies</span>
+          </div>
+        </div>
+
+      
+        <div class="row pb-3" id="technologies-tape">
+          <div class="col-lg-4 pt-2">
+            <div class="technologies-bl"></div>
+            <div class="tape-technoloies">
+              <span>
+                The refinery produces petroleum products with high-quality performance and environmental characteristics, including motor fuels, aromatics, liquid paraffin, roofing and insulation materials, etc. Diesel fuel, jet fuel, roofing materials and bitumens produced by the refinery meet international quality standards.
+              </span>
+            </div>
+
+            <div class="row mt-4">
+              <div class="technologies-pic col-lg-3 pe-0">
+                <img src="{% static 'pictures/oilrefining.webp' %}" class="tech-pic" alt="">
+              </div>
+              <div class="col-lg-9 ps-0 text-white pt-1">
+                <p class="mb-0 fw-bold">OIL REFINING</p>
+                <span>OASIS PETROLEUM LLC</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-4 pt-2">
+            <div class="technologies-bl"></div>
+            <div class="tape-technoloies">
+              <span>
+                LLC Sochi-Neft Refinerypays special attention to the operating activity in the field of gas production and transportation, its processing volume growth and electricity generation increase at the Company's own power plants.
+              </span>
+            </div>
+
+            <div class="row mt-4">
+              <div class="technologies-pic col-lg-3 pe-0">
+                <img src="{% static 'pictures/gasproduction.webp' %}" class="tech-pic" alt="">
+              </div>
+              <div class="col-lg-9 ps-0 text-white pt-1">
+                <p class="mb-0 fw-bold">GAS PRODUCTION AND USE</p>
+                <span>OASIS PETROLEUM LLC</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 pt-2">
+            <div class="technologies-bl"></div>
+            <div class="tape-technoloies">
+              <span>
+                Strengthening and expanding the resource base is one of the Company's strategic objectives. The sound resource base ensures the stability of production activities and achievement of targeted volumes of hydrocarbon production. The Company’s fields and license blocks are located in three oil and gas provinces - Krasnodar Region.
+              </span>
+            </div>
+
+            <div class="row mt-4">
+              <div class="technologies-pic col-lg-3 pe-0">
+                <img src="{% static 'pictures/exploration.webp' %}" class="tech-pic" alt="">
+              </div>
+              <div class="col-lg-9 ps-0 text-white pt-1">
+                <p class="mb-0 fw-bold">EXPLORATION AND PRODUCTION</p>
+                <span>OASIS PETROLEUM LLC</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Technologies section STARTS-->
+
+    <!--Laboratory section STARTS-->
+    <section id="laboratory" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-11 text-white mx-5 my-5 text-center">
+            <h2 class="fw-bold">Laboratory</h2>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container horizontal-scrollable">
+        <div class="row flex-nowrap">
+          <div class="col-lg-3">
+            <img src="{% static 'pictures/lab-0.webp' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-3">
+            <img src="{% static 'pictures/lab-1.webp' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-3">
+            <img src="{% static 'pictures/lab-2.webp' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-3">
+            <img src="{% static 'pictures/lab-3.webp' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-3">
+            <img src="{% static 'pictures/lab-4.webp' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-3">
+            <img src="{% static 'pictures/lab-5.webp' %}" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Laboratory section ENDS-->
+   
+    <!--Services section STARTS-->
+    <section id="services">
+      <div class="container py-5 pb-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Services</h2>
+          </div>
+
+          <div class="col-lg-9">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Engineering
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>
+                      LLC Sochi-Neft performs the following activities in the field of engineering:
+                    </p> 
+
+                    <p>
+                      Design: project management, development of conceptual design, feasibility study, basic and detail design, as built documentation, and field engineering
+                    </p>
+                    
+                    <p>
+                      Survey: geoinformation systems, topographic survey, geological studies, electrical measurement of soil parameters
+                    </p>
+                    
+                    <p>
+                      Engineering support: consulting, technical assessment, technical assumptions, cost estimation, supervision for compliance with the applicable requirements.
+                    </p>
+                    
+                    <p>
+                      Projects: Yugo-Zapadnaya power plant, offshore ice-resistant platform LSP-1 on the Korchagin oil and gas field, gasification facilities in Belarus, Irkutsk Region, Samara Region, power distribution facilities of the Kalinin nuclear power plant (unit 4), Gazelle gas pipeline (Czech Republic), Sheiba-Abqaiq oil pipeline (Saudi Arabia), gas processing plant -1 (Syria), East-West gas pipeline (India).
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <hr>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Procurement
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>
+                      LLC Sochi-Neft Refinery has considerable experience in the field of procurement, particularly in the delivery of process equipment for Russian and international projects.
+                    </p> 
+
+                    <p>
+                      Sochi-Neft activity is based not only on its obligations to supply the up-to-date equipment in due time but also on establishment and further development of long-term partnership with the leading equipment suppliers.
+                    </p>
+                    
+                    <p>
+                      In 2013, Sochi-Neft entered into the strategic agreements on technical and commercial cooperation with Siemens Ltd. in the field of procurement of electric equipment and services for construction and overhaul of power grid facilities, as well as electric power generation facilities in Russia.
+                    </p>
+                    
+                    <p>
+                      Cooperation with the leading Russian manufacturers is actively encouraged as well. In 2013, Sochi-Neft singed memorandum of partnership with Taman Electromechanical Plant when implementing the projects of fuel and energy sector.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <hr>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Construction
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>
+                      LLC Sochi-Neft Refinery has implemented over 70 projects in 19 countries for a period of 24 years.
+                    </p>
+                    
+                    <p>
+                      Within the period Sochi-Neft has built over 13000 km of pipelines nearly 4000 km of gas distribution networks and 50 gas compressor stations, reconstructed 19 gas compressor stations, developed 40 oil and gas fields.
+                    </p>
+                    
+                    <p>
+                      In the field of power transmission Sochi-Neft has constructed over 1500 km of overhead lines and substations for Unified Power System of Russia with total transformer capacity of 9000 MVA.
+                    </p>
+                    
+                    <p>
+                      In power generation Sochi-Neft has been involved in construction of five nuclear and power plants with total output of 3105 MW.
+                    </p>
+                    
+                    <p>
+                      The current priority of Sochi-Neft is to increase its competence in oil and gas, energy, industrial, civil and transport infrastructure construction, as well as to develop a new activity related to industrial ecology.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <hr>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    project Management
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>
+                      Acting as a general contractor, Sochi-Neft Refinery is involved not only in engineering process, delivery of products and materials, construction of facilities, but also in integrated project management. For this purpose, Sochi-Neft accumulates the best world practices and uses the most advance technologies in project management.
+                    </p>
+                   
+
+                    <p>
+                      In particular, the best solutions are obtained by Sochi-Neft under the memorandum of partnership with Atomenergoproekt and Vedeneev Russian National Hydraulic Engineering Research Institute (integrated in RusHydro) signed in 2012. The memorandum provides for set-up of joint centre of project management competences, a platform for exchange of knowledge and best practices in this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Services section ENDS-->
+
+{% endblock %}
