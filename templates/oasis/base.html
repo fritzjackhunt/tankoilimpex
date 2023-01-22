@@ -27,9 +27,9 @@
 <body>
 
     <!--Navbar section STARTS-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">Oasis Petroleum LLC </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -42,10 +42,13 @@
                 <a class="nav-link" href="{% url 'about' %}">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="{% url 'services' %}">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="{% url 'production' %}">Production</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'contact' %}">Contact</a>
               </li>
             </ul>
           </div>
@@ -79,20 +82,16 @@
 
         <div class="col-lg-4">
             <ul>
-            <li>legal@sochi-neft.ru</li>
-            <li>legal@sochi-neft.ru</li>
-            <li>legal@sochi-neft.ru</li>
-            <li>legal@sochi-neft.ru</li>
-            <li>legal@sochi-neft.ru</li>
-            <li>legal@sochi-neft.ru</li>
-            <li>legal@sochi-neft.ru</li>
-            <li>legal@sochi-neft.ru</li>
+            <li>info@oasispetroleumllc.com</li>
+            <li>dispatch@oasispetroleumllc.com</li>
+            <li>safety@oasispetroleumllc.com</li>
+            <li>sales@oasispetroleumllc.com</li>
             </ul>
         </div>
 
         <div class="col-lg-4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, corporis minima illo iusto nesciunt, aspernatur placeat doloremque praesentium voluptatibus quis tempora quae voluptates aperiam nulla! Veritatis quis ea iure at.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum velit quas molestiae ad sit, corrupti est qui amet saepe sequi laborum officia ratione in quia! Quos dicta laudantium impedit possimus?</p>
+            <p>1001 Fannin Street, Suite 1500 <br />
+              Houston, Texas 77002</p>
         </div>
 
         <div class="col-lg-2">
@@ -125,7 +124,7 @@
 
     <div class="container pb-4">
         <div class="col-lg-12">
-        &copy; OASIS PETROLEUM LLC
+        &copy; Oasis Petroleum LLC 
         </div>
     </div>
     </section>

@@ -3,25 +3,23 @@
     font-family: 'Arial,Helvetica,sans-serif';
 }
 
-.hero-1 {
+#header-text span::before {
+    content: '';
+    height: 2px;
+    width: 6%;
+    background: #ffac00;
     position: absolute;
-    margin-top: -620px;
+    top: 46%;
+    left: 0;
+}
+
+.services-hero {
+    position: absolute;
+    margin-top: -520px;
     color: white;
     font-weight: bolder;
     z-index: 1;
     margin-right: 0px;
-}
-
-#header-text h1 {
-    line-height: 1em;
-    font-size: 80px;
-    letter-spacing: normal;
-}
-
-#header-tape {
-    height: 145px;
-    width: 1077px;
-    background-color: rgb(36, 40, 52);
 }
 
 #header-tape p {
@@ -52,15 +50,23 @@
     color: #fff;
 }
 
-#about {
-    background-image: url("/static/pictures/about.webp");
-    color: #fff;
+#production-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    width: 170px;
+    height: 54px;
+    border-radius: 0px 0px 10px 10px;
 }
 
-#about img {
-    width: 774px;
-    height: 323px;
-    object-fit: cover;
+#production-header span {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: normal;
+    line-height: normal;
+    font-family: 'montserrat, sans-serif';
 }
 
 #about-header,
@@ -85,6 +91,10 @@
     width: 350px;
     height: 54px;
     border-radius: 10px 10px 0px 0px;
+}
+
+#about-header {
+    padding-left: 12px;
 }
 
 #about-header span,
@@ -238,17 +248,74 @@
     font-size: 14px;
 }
 
-#about-page {
+#about-page,
+#about-us-tape,
+#contact-page {
     background-color: #00060F;
     color: #fff;
 }
 
-#about-page-inner {
+#contact-page {
+    background-image: url("/static/pictures/contact2.webp");
+}
+
+#contact-page h1 {
+    font-size: 40px;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+#contact-page p {
+    line-height: 1.6em;
+    font-size: 18px;
+    letter-spacing: normal;
+}
+
+
+#about-page-inner,
+#services-inner,
+#production-inner {
     background-color: #242834;
 }
 
-#about-us-tape {
-    background-color: #00060F;
+.services-text {
+    min-height: 430px;
+}
+
+#services-inner h2 {
+    letter-spacing: normal;
+    line-height: 1.4em;
+    font-size: 26px;
+    font-family: 'montserrat', sans-serif;
+}
+
+#services-inner span {
+    font-size: 18px;
+    letter-spacing: 0em;
+}
+
+.btn-services {
+    border-radius: 0;
+}
+
+.btn-submit {
+    width: 135px;
+    height: 50px;
+}
+
+.btn-quote,
+.btn-materials {
+    padding-top: 12px;
+}
+
+.btn-quote {
+    width: 135px;
+    height: 50px;
+}
+
+.btn-materials {
+    width: 239px;
+    height: 50px;
 }
 
 .tape-about-us {
@@ -257,21 +324,33 @@
     color: #fff;
 }
 
+.prodiction-img {
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+}
 
+#production-inner ul {
+    padding-left: 0;
+    list-style-type: none;
+    list-style: none;
+}
 
+#production-inner ul li {
+    letter-spacing: normal;
+    font-size: 16px;
+    line-height: normal;
+    font-family: 'montserrat, sans-serif';
+    font-weight: bold;
+}
 
+#production-inner hr {
+    margin: 8px 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+#contact-form {
+    background-color: #fff;
+    color: #000;
+}
 
 #footer {
     background-color: #242834;
@@ -289,4 +368,110 @@
     padding-left: 0rem;
     list-style-type: none;
     list-style: none;
+}
+
+.about-content {
+    position: absolute;
+    margin-top: -700px;
+    z-index: 1;
+    color: #fff;
+    margin-right: 0px;
+}
+
+/* Small Devices Only */
+@media (max-width: 768px) {
+    #header-text h1 {
+        line-height: 1em;
+        font-size: 32px;
+        letter-spacing: normal;
+    }
+
+    .hero-1 {
+        position: absolute;
+        padding-top: 20%;
+        color: white;
+        font-weight: bolder;
+        z-index: 1;
+    }
+
+    #header-tape {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(36, 40, 52);
+    }
+
+    #about {
+        background-image: url("/static/pictures/photoroom-sm.webp");
+        color: #fff;
+        width: 320px;
+        height: 901px;
+        object-fit: cover;
+        object-position: 50% 50%;
+        margin-top: 95%;
+    }
+
+    .about-picture {
+        width: 280px;
+        height: 117px;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    #header-text span {
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+        position: relative;
+        letter-spacing: 1px;
+        margin-top: 80px;
+    }
+}
+
+/* Large screen styles */
+@media (min-width: 992px) {
+    #header-text span {
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+        padding-left: 62px;
+        position: relative;
+        letter-spacing: 1px;
+        margin-top: 80px;
+    }
+
+    #header-text h1 {
+        line-height: 1em;
+        font-size: 80px;
+        letter-spacing: 1px;
+    }
+
+    .hero-1 {
+        position: absolute;
+        margin-top: -620px;
+        color: white;
+        font-weight: bolder;
+        z-index: 1;
+        margin-right: 0px;
+    }
+
+    #about {
+        background-image: url("/static/pictures/about4.webp");
+        color: #fff;
+        width: 1277px;
+        height: 995px;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+    
+    #about img {
+        width: 774px;
+        height: 323px;
+        object-fit: cover;
+    }
+
+    #header-tape {
+        height: 145px;
+        width: 1077px;
+        background-color: rgb(36, 40, 52);
+    }
 }
