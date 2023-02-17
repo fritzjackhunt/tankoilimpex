@@ -1,3 +1,7 @@
+body {
+    background-color: #212529;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Arial,Helvetica,sans-serif';
@@ -110,7 +114,11 @@
 }
 
 #projects {
-    background-image: url("/static/pictures/projects.webp");
+    position: absolute;
+    margin-top: -725px;
+    z-index: 1;
+    right: 0px;
+    left: 0px;
     color: #fff;
 }
 
@@ -372,7 +380,7 @@
 
 .about-content {
     position: absolute;
-    margin-top: -700px;
+    margin-top: -850px;
     z-index: 1;
     color: #fff;
     margin-right: 0px;

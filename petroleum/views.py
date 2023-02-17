@@ -25,7 +25,7 @@ def contact(request):
             contact_fname, 
             contact_message,
             contact_email,
-            ['info.@oasispetroleumllc.com'],
+            ['info@oasispetroleumllc.com'],
             fail_silently = False,
         )
 
