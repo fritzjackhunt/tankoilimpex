@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-%^!yx4t!4_f@eit$1@u_a!^ltsoy5r0x&ow$_e)@s$h(w&*cqt
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1:8000', '*']
+ALLOWED_HOSTS = ['127.0.0.1:8000', 'www.oasispetroleumllc.com', 'oasispetroleumllc.com']
 
 #Site ID
 SITE_ID = 1
